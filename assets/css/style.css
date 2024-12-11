@@ -9,4 +9,73 @@ html{
 
 body{
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ============common============= */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    color: #1EBFC1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #1EBFC1;
+    display: inline-block;
+    padding: 0 23px;
+    line-height: 48px;
+    min-width: 186px;
+}
+
+
+/* ==========header============= */
+.header{
+    /* background: pink; */
+}
+.header.fixed{
+    position: sticky;
+    top: -42px;
+}
+.header .body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px 0 8px;
+}
+.header .body .nav{
+    margin-left: auto;
+}
+.header .body .nav ul{
+    display: flex;
+}
+
+.nav ul a,
+.header .body .action a:first-child{
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    line-height: normal;
+    padding: 8px 20px;
+}
+.nav ul a:hover,
+.header .body .action a:first-child:hover{
+    text-shadow: 1px 0 0 currentColor ;
+}
+
+.header .body .action{
+    margin-left: 137px;
+}
+.action .btn-sign-up{
+    min-width: 108px;
+}
+.action .btn-sign-up:hover{
+    color: #fff;
+    background: #1EBFC1;
 }
