@@ -86,6 +86,7 @@ a{
 /* ================hero===================== */
 .hero{
     padding-top: 42px;
+    padding-bottom: 79px;
 }
 
 .hero .body{
@@ -259,4 +260,57 @@ a{
     color: #FFF;
     font-size: 1rem;
     font-weight: 500;
+}
+
+
+/* ================features================= */
+.features{
+    margin-top: 70px;
+}
+.features .body-feature{
+    padding: 60px 0;
+    max-width: 1024px;
+}
+.features .body-feature .top-title{
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.features .body-feature .title{
+    margin: 18px 0;
+    width: 557px;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.features .body-feature .desc{
+    width: 590px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    margin-bottom: 80px;
+    line-height: normal;
+}
+.features .body-feature .feature-list{
+    display: flex;
+    justify-content: space-between;
+}
+.features .body-feature .feature-list .item-title{
+    margin: 26px 0 16px;
+    color: #0D1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.features .body-feature .feature-list .item-desc{
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    max-width: 168px;
+}
+.features .body-feature .feature-list .item-desc:nth-child(2){
+    max-width: 223px;;
+}
+.features .body-feature .feature-list .item-desc:nth-child(3) {
+    max-width: 224px;
 }
