@@ -34,15 +34,18 @@ a{
     line-height: 48px;
     min-width: 186px;
 }
-
+.btn:hover{
+    opacity: 0.9;
+}
 
 /* ==========header============= */
 .header{
-    /* background: pink; */
+    background: #F2F9FF;
 }
 .header.fixed{
     position: sticky;
     top: -42px;
+    z-index: 1;
 }
 .header .body{
     display: flex;
@@ -78,4 +81,182 @@ a{
 .action .btn-sign-up:hover{
     color: #fff;
     background: #1EBFC1;
+}
+
+/* ================hero===================== */
+.hero{
+    padding-top: 42px;
+}
+
+.hero .body{
+    display: flex;
+    justify-content: space-between;
+}
+.hero .body .left-block{
+    width: 40%;
+}
+.hero .body .left-block .top-title{
+    margin-top: 93px;
+    color: #767E7E;
+    font-size: 1.4rem;
+}
+
+.hero .body .left-block .title{
+    color: #0D1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-top: 18px;
+}
+.hero .body .left-block .desc{
+    color: #9DA6A5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    width: 374px;
+    margin-top: 46px;
+}
+.hero .body .left-block .action{
+    margin-top: 52px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.btn-start{
+    color: #FFF;
+    line-height: 68px;
+    border-radius: 14px;
+    background: #1EBFC1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .body .left-block .action .play{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.hero .body .left-block .action .play:hover{
+    background: #eee;
+    box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+    color: #fff;
+    transition: 0.5s;
+}
+.hero .body .right-block{
+    width: 50%;
+    position: relative;
+}
+.hero .body .right-block .media{
+    width: 100%;
+    height: 631px; 
+    object-fit: cover;
+}
+.hero .body .right-block .courses{
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    position: absolute;
+    left: -40px;
+    top: 150px;
+}
+.hero .body .right-block .courses .book{
+    width: 36px;
+    height: 40px;
+}
+.hero .body .right-block .courses::after{
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 26px;
+    left: 29px;
+    border-radius: 999px;
+}
+.hero .body .right-block .courses .detail{
+    width: 55px;
+}
+.hero .body .right-block .detail{
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hero .body .right-block .schedules{
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    left: -65px;
+    bottom: 47px;
+}
+.hero .body .right-block .schedules .detail{
+    margin: 16px 35px 0;
+    display: inline-block;
+}
+.hero .body .right-block .schedules .icon{
+    display: block;
+    margin: 16px 25px 0;
+}
+.hero .body .right-block .schedules .schedule-icon-2{
+    margin-top: 12px;
+}
+.hero .body .right-block .schedules .schedule-icon-3{
+    margin-top: 10px;
+}
+.hero .body .right-block .schedules .schedule-icon-4{
+    margin: 16px auto 0;
+    width: 26px;
+    height: 6px;
+}
+
+.hero .body .right-block .avatar-group{
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    right: 45px;
+    bottom: 42px;
+}
+
+.hero .body .right-block .avatar-group .ava{
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+.hero .body .right-block .avatar-group .detail{
+    display: inline-block;
+    margin: 17px 72px 8px 35px;
+}
+.hero .body .right-block .avatar-group .avatar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .body .right-block .avatar-group .avatar-list .ava-more{
+    background: #1EBFC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ava-more span{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
 }
